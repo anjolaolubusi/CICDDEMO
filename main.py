@@ -13,11 +13,13 @@ def health():
 def desc():
     return "This is an api page"
 
-
-
 @app.route("/about", methods=['GET'])
 def about():
     return "This is built by Anjola"
+
+@app.route("/marco", methods=['GET'])
+def marco():
+    return "Polo"
 
 if __name__ == "__main__":
     app.run(debug=True,host='0.0.0.0',port=int(os.environ.get('PORT', 8080)))

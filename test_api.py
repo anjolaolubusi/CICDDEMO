@@ -25,6 +25,12 @@ class ApiTest(unittest.TestCase):
         response = self.app.get("/about")
         self.assertEqual(response.data, b'This is built by Anjola')
         self.assertEqual(response.status_code, 200)
+    
+    def testMarco(self):
+        response = self.app.get("/marco")
+        self.assertEqual(response.data, b'Polo')
+        self.assertEqual(response.status_code, 200)
+
 
 if __name__ == "__main__":
     unittest.main()
