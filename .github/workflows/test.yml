@@ -1,6 +1,8 @@
 name: Python Test Addition
 
 on: 
+  pull_request:
+    branches: [ "main", "dev" ]
   push:
     branch: [dev]
 
