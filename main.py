@@ -1,5 +1,6 @@
 from flask import Flask, jsonify, request
 from flask_restx import Api
+import os
 
 app = Flask(__name__, )
 api = Api(app)
@@ -8,8 +9,8 @@ api = Api(app)
 def health():
     return "Alive"
 
-@app.route("/", methods=['GET'])
-def health():
+@app.route("/desc", methods=['GET'])
+def desc():
     return "This is an api page"
 
 
