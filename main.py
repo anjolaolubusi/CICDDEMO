@@ -14,7 +14,7 @@ def home():
     return "This is an api page"
 
 @app.route("/sshTest", methods=['GET'])
-def home():
+def sshTest():
     return "Deployment is working"
 
 
