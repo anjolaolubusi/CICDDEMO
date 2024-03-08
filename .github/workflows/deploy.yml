@@ -20,7 +20,7 @@ jobs:
     steps:       
     - name: Deploy using ssh
       uses: appleboy/ssh-action@master
-      if: github.ref == 'refs/heads/master'
+      if: github.ref == 'refs/heads/main'
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
