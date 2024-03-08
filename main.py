@@ -18,9 +18,6 @@ def desc():
 def about():
     return "This is built by Anjola"
 
-@app.route("/marco", methods=['GET'])
-def marco():
-    return "polo"
 
 
 if __name__ == "__main__":
