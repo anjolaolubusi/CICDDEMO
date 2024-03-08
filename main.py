@@ -8,5 +8,10 @@ api = Api(app)
 def health():
     return "Alive"
 
+@app.route("/", methods=['GET'])
+def health():
+    return "This is an api page"
+
+
 if __name__ == "__main__":
-    app.run('0.0.0.0', debug=True, port=8081)
+    app.run(debug=True,host='0.0.0.0',port=int(os.environ.get('PORT', 8080)))
