@@ -1,7 +1,7 @@
-name: Python Test
+name: Python Test Addition
 
 on: 
-  pull_request:
+  push:
     branch: [dev]
 
 
