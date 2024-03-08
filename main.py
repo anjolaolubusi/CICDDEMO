@@ -15,7 +15,7 @@ def desc():
 
 
 @app.route("/about", methods=['GET'])
-def desc():
+def about():
     return "This is built by Anjola"
 
 
