@@ -18,7 +18,8 @@ def desc():
 def about():
     return "This is built by Anjola"
 
-
+def hello():
+    return "Hi"
 
 if __name__ == "__main__":
     app.run(debug=True,host='0.0.0.0',port=int(os.environ.get('PORT', 8080)))
