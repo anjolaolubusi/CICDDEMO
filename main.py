@@ -9,14 +9,9 @@ api = Api(app)
 def health():
     return "Alive"
 
-@app.route("/", methods=['GET'])
-def home():
+@app.route("/desc", methods=['GET'])
+def desc():
     return "This is an api page"
-
-@app.route("/sshTest", methods=['GET'])
-def sshTest():
-    return "Deployment is working"
-
 
 
 if __name__ == "__main__":
