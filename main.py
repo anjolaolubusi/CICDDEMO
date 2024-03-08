@@ -13,6 +13,11 @@ def health():
 def home():
     return "This is an api page"
 
+@app.route("/sshTest", methods=['GET'])
+def home():
+    return "Deployment is working"
+
+
 
 if __name__ == "__main__":
     app.run(debug=True,host='0.0.0.0',port=int(os.environ.get('PORT', 8080)))
