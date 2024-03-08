@@ -2,7 +2,7 @@ name: Python Test
 
 on: 
   pull_request:
-    branch: [main]
+    branch: [dev]
 
 
 jobs:
